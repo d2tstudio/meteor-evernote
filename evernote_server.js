@@ -8,7 +8,7 @@ var querystring = Npm.require("querystring");
 //declare var Async;
 
 var _config = ServiceConfiguration.configurations.findOne({service: serviceName});
-var _sandbox =  _config ? _config.sandbox || false : false;
+var _sandbox =  true; //_config ? _config.sandbox || false : false;
 var _sub = 'www';
 if (_sandbox === true) _sub = 'sandbox';
 
